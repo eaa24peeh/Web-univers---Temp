@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "menca", sans-serif; /* Apply Menca as the general font */
+  font-weight: 300; /* Light weight for body text */
+}
+
+/* Header Styles */
+header {
+  background-color: #281BE0;
+  height: 50px;
+}
+
+.header-container {
+  width: 100%; /* Make header full width */
+  max-width: 1440px; /* Keep header content centered within max width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px; /* Consistent padding on the left and right */
+}
+
+/* Logo and Site Title Container */
+.logo-title {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF; /* White color for text */
+}
+
+.logo-title img {
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+  margin-bottom: 4px; /* Space between logo and academy name */
+}
+
+/* Style for Flowstate Academy */
+.academy-name {
+  font-weight: 700; /* Bold */
+  color: #FFFFFF; /* White text */
+}
+
+/* Style for ⏐ Blog */
+.blog-title {
+  font-weight: 300; /* Light */
+  color: #FFFFFF; /* White text */
+  margin-left: 4px;
+  margin-bottom: 4px; /* Small space between "Flowstate Academy" and "| Blog" */
+}
+
+/* Navigation Links */
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav-links li {
+  margin-left: 30px;
+}
+
+nav .nav-links li:first-child {
+  margin-left: 0;
+}
+
+nav .nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500; /* Medium weight for header nav text options */
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 360px; /* Height of the gradient */
+  background: linear-gradient(to top, #281BE0, transparent); /* Blue to transparent gradient */
+  z-index: 0; /* Place above the image but behind other content */
+}
+
+.hero-image {
+  width: 100%; /* Full width of the viewport */
+  height: 1064px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  position: absolute; /* Make the hero image a background layer */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place behind other content */
+}
+
+/* Hero Content Wrapper for Consistent Layout */
+.hero-content {
+  position: relative;
+  width: 100%;
+  max-width: 1440px; /* Keep content within max width */
+  margin: 0 auto;
+  padding: 0 20px; /* Consistent padding on the sides */
+  display: flex;
+  align-items: flex-start; /* Align items to the top of the container */
+  height: 1064px; /* Match the height of the hero content */
+  z-index: 1; /* Place above the gradient and image */
+}
+
+/* Overlay Section */
+.overlay {
+  margin-top: 186px; /* Add top margin to position from the top of the hero content */
+  width: 774px;
+  height: auto;
+  background-color: #F4F9FF;
+  border-radius: 18px; /* Rounded all corners */
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700; /* Bold weight for the tagline */
+}
+
+.overlay h2 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 700; /* Bold for any secondary headings in the overlay */
+}
+
+.overlay p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 300; /* Light weight for body text in overlay */
+}
+
+/* Below Hero Section */
+.below-hero {
+  background-color: #281BE0; /* Same blue color as header */
+  width: 100%;
+  padding: 40px 20px; /* Padding to add some space inside the section */
+  color: #FFFFFF; /* White text for contrast */
+}
+
+.below-hero-content {
+  max-width: 1440px; /* Keep content centered within max width */
+  margin: 0 auto;
+}
+
+.below-hero h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.below-hero p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+}
